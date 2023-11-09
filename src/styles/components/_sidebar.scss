@@ -1,0 +1,27 @@
+.sidebar{
+    flex: 2;
+    background-color: $white;
+    padding: 50px 20px;
+
+    &_menu{
+        margin-top: 50px;
+    }
+
+    &_link{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        transition: all 0.2 ease;
+
+            
+            &.active, &:hover{
+                @include linkStyles;
+            }
+        &:not(:first-child){
+            margin-top: 15px;
+        }
+
+    }
+}

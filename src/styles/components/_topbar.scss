@@ -1,0 +1,26 @@
+.topbar {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: $white;
+    margin:1.6rem auto ;
+    width:40%;
+
+    &_list {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    &_link {
+        transition: color 0.2s ease;
+        cursor: pointer;
+        
+        &:hover{
+            color: $blue;
+        }
+    }
+}
+
+
+
